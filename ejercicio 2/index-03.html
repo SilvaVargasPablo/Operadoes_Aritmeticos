@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>convertidor de grados celcius</title> 
+</head> 
+
+<body> 
+ <script>
+    //ingresar grados celius a convertir
+    var grados = prompt('ingrese la temperatura en grados Celsius');
+
+     //transformacion de celcius a kelvin y fahrenheit
+     var kelvin = parseInt(grados) + 273.15;
+     var fahrenheit = (parseInt(grados) * (9 / 5)) + 32;
+
+    //se imprime resutados
+     document.write(grados +'°C es equivalente a: '+ kelvin +' °K'+ '<br>');
+     document.write(grados +'°C es equivalente a: '+ fahrenheit +' °F'+ '<br>');
+
+    </script>
+</body> 
+</html> 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculos matematicos</title>
+</head>
+
+<body>
+  <script>
+    //ingresar numeros
+    var num1 = prompt('ingrese número mayor que 0');
+    var num2 = prompt('ingrese número distinto, y mayor que 0');
+
+
+if ((num1 > 0 && num1 != 0) && (num2 > 0 && num2 != 0)) {
+    var suma = parseInt(num1) + parseInt(num2);
+    var resta = parseInt(num1) - parseInt(num2);
+    var multiplicacion = parseInt(num1) * parseInt(num2);
+    var division = parseInt(num1) / parseInt(num2);
+    var modulo = parseInt(num1) % parseInt(num2);
+    var condecimal = division.toFixed(2);
+} 
+
+    //mostrar resultado
+    document.write('El resultado de la suma es:'+ suma +'<br>');
+    document.write('El resultado de la resta es:'+ resta +'<br>');
+    document.write('El resultado de la multiplicación es:' +multiplicacion +'<br>');
+    document.write('El resultado de la división es:'+ condecimal +'<br>');
+    document.write('El resultado del módulo es:'+ modulo +'<br>');
+  </script>
+</body>
+
+</html>
